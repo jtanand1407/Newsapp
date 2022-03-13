@@ -9,6 +9,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const News=(props)=>  {
 
   const [articles,setArticles]=useState([])
+  // eslint-disable-next-line
   const [loading,setLoading]= useState(true)
   const [page, setPage] = useState(1)
   const [totalResults, setTotalResults] = useState(0)
@@ -40,6 +41,7 @@ const News=(props)=>  {
   useEffect(() => {
     document.title=`${CapitlizeString(props.category)}- NewsNinza`;
     updateNews();
+    // eslint-disable-next-line
   }, [])
 
   
